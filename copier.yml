@@ -1,0 +1,13 @@
+project_name:
+  type: str
+  help: Nom du projet?
+
+project_description:
+  type: str
+  help: yfékoi ?
+
+project_author:
+  type: str
+  help: Auteur ?
+
+_exclude: ["copier.yml", "~*", "*.py[co]", "__pycache__", ".git"]

@@ -1,0 +1,8 @@
+[settings]
+python.uv_venv_auto = "create|source"
+
+[tools]
+prek = "latest"
+
+[hooks]
+postinstall = ["prek install -f", "prek install --hook-type commit-msg -f", "uv sync"]

@@ -1,0 +1,5 @@
+[tools]
+prek = "latest"
+
+[hooks]
+postinstall = ["prek install -f", "prek install --hook-type commit-msg -f"]
