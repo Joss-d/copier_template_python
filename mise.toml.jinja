@@ -6,3 +6,6 @@ prek = "latest"
 
 [hooks]
 postinstall = ["prek install -f", "prek install --hook-type commit-msg -f", "uv sync"]
+
+[task.coverage]
+run = ["uv run coverage run -m pytest", "uv run coverage report"]
